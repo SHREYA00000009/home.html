@@ -1,0 +1,178 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body and Basic Styling */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #c2a7ad;
+  }
+  
+  header {
+    background-color: #0d0112;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav ul li a:hover {
+    color: #f2a01e;
+  }
+  
+  /* Intro Section */
+  .intro {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .intro img {
+   
+    max-width: 500px;
+    height: 500px;
+  
+    border-radius: 30%;
+  }
+  
+  .menu {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.menu-item {
+    background-color: #0a0421;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(230, 225, 225, 0.2);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(115, 89, 89, 0.4);
+}
+
+.menu-item h2 {
+    color: #ecdfde;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.menu-item p {
+    color: #f2eaea;
+    font-size: 16px;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-item {
+        margin: 10px;
+        padding: 15px;
+    }
+}
+
+  
+  /* About Section */
+  .about {
+    text-align: center;
+    margin: 30px 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 800;
+   
+  }
+  
+  .about img {
+    width: 50%;
+    max-width: 400px;
+    border-radius: 10px;
+   
+  }
+  
+  /* Contact Section */
+  .contact-info {
+    text-align: center;
+    margin: 30px 0;
+  }
+  
+  .contact-info img {
+    width: 50%;
+    max-width: 400px;
+    border-radius: 10px;
+  }
+  
+  .map iframe {
+    width: 80%;
+    height: 400px;
+    margin-top: 20px;
+    border: none;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  /* Animation for Fade In */
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 5s forwards;
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+  
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav ul li {
+      display: inline-block;
+      text-align: center;
+      margin: 10px;
+    }
+  
+    .intro img, .about img, .contact-info img {
+      width: 100%;
+    }
+  
+    .map iframe {
+      width: 100%;
+    }
+  }
+  
